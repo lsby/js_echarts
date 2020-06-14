@@ -9,7 +9,7 @@
 ## 怎样用
 
 - 下载和安装 node
-- 下载本项目
+- 下载本项目 终端进入项目路径
 - npm i
 - 修改 page/index/app.js
 - npm run start
