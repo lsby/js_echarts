@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <title>画图</title>
+    <script src="../../lib/echarts.min.js"></script>
+</head>
+
+<body style="height: 100%;">
+    <div id="main" style="width: 100%;height:100%;"></div>
+    <button id="保存图片">保存图片</button>
+    <script type="text/javascript">
+
+        async function main() {
+            var myChart = echarts.init(document.getElementById('main'))
+
+            var option = await require('./app')()
+            option.toolbox = {
+                show: true,
+                feature: {
+                    saveAsImage: {
+                        show: true,
+                        excludeComponents: ['toolbox'],
+                        pixelRatio: 2
+                    }
+                }
+            }
+
+            myChart.setOption(option)
+        }
+        main()
+
+    </script>
+</body>
+
+</html>

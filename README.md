@@ -1,2 +1,19 @@
 # js_echarts
- 
+
+## 是什么
+
+简单的 echarts 封装, 用于简单的画图需求.
+
+附带了一些数据处理函数.
+
+## 怎样用
+
+- 下载和安装 node
+- 下载本项目
+- npm i
+- 修改 page/index/app.js
+- npm run start
+
+## 其他
+
+修改了 app.js 后,只需要按 ctrl+r (浏览器刷新键) 即可刷新,不需要重启软件.
